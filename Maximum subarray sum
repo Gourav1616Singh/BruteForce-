@@ -2,7 +2,7 @@ class Solution {
 public:
     int maxSubArray(vector<int>& nums) {
         int i;
-        int max=-100000;
+        int max=INT_MIN; //here i have used the minimum value of int
         for(i=0;i<nums.size();i++)
         {
             int sum=0;
@@ -15,7 +15,5 @@ public:
            
         }
             return max;
-            
-        
     }
 };
